@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass IT Driving School - Student Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pass IT Driving School</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Book Schedule</a></li>
+                <li><a href="studentDet.html">Add Student</a></li>
+                <li><a href="student-display.html">View & Edit Student</a></li>
+
+                <li><a href="instructor.html">Add Instructor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-container">
+        <div id="student-form">
+            <h2>Enter Student Details</h2>
+            <form id="student-details-form">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" required>
+                <label for="student-age">Age:</label>
+                <input type="number" id="student-age" min="16" max="100" required>
+                <label for="student-email">Email:</label>
+                <input type="email" id="student-email" required>
+                <button type="submit" onclick="redirectToStudentDetails()">Save Student Details</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function redirectToStudentDetails() {
+            window.location.href = 'student-display.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass IT Driving School - Instructor Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pass IT Driving School</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Book Schedule</a></li>
+                <li><a href="studentDet.html">Add Student</a></li>
+                <li><a href="student-display.html">View & Edit Student</a></li>
+
+                <li><a href="instructor.html">Add Instructor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-container">
+        <div id="instructor-form">
+            <h2>Add New Instructor</h2>
+            <form id="add-instructor-form">
+                <label for="instructor-name">Instructor Name:</label>
+                <input type="text" id="instructor-name" required>
+                <label for="instructor-contact">Contact Details:</label>
+                <input type="text" id="instructor-contact" required>
+                <button type="submit">Add Instructor</button>
+            </form>
+        </div>
+        <div id="instructor-list">
+            <h2>Instructor List</h2>
+            <ul id="instructor-list-items">
+                <!-- Instructor data will be populated dynamically here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
